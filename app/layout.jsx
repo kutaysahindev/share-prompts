@@ -1,5 +1,5 @@
+import Head from "next/head";
 import "@styles/globals.css";
-
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
@@ -9,14 +9,28 @@ export const metadata = {
 };
 
 const RootLayout = ({ children }) => (
-  <html lang='en'>
+  <html lang="en">
+    <Head>
+      <link
+        rel="shortcut icon"
+        href="../public/assets/favicon.ico"
+        type="image/x-icon"
+      />
+      <link
+        rel="icon"
+        href="../public/assets/favicon.ico"
+        type="image/x-icon"
+      />
+      <title>{metadata.title}</title>
+      <meta name="description" content={metadata.description} />
+    </Head>
     <body>
       <Provider>
-        <div className='main'>
-          <div className='gradient' />
+        <div className="main">
+          <div className="gradient" />
         </div>
 
-        <main className='app'>
+        <main className="app">
           <Nav />
           {children}
         </main>
