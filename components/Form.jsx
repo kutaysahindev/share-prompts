@@ -8,7 +8,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       </h1>
       <p className="desc text-left max-w-md">
         {type} and share amazing prompts with the world, and let your
-        imagination run wild with any AI-powered platform.
+        imagination run wild with any AI-powered platform
       </p>
 
       <form
@@ -23,41 +23,42 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           <textarea
             value={post.prompt}
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
-            placeholder="Write your prompt here"
-            className="form_textarea"
+            placeholder="Write your post here"
             required
-          ></textarea>
+            className="form_textarea "
+          />
         </label>
+
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
-            Tag{" "}
+            Field of Prompt{" "}
             <span className="font-normal">
-              (#product, #webdevelopment, #idea)
+              (#product, #webdevelopment, #idea, etc.)
             </span>
           </span>
-
           <input
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
-            placeholder="#tag"
-            className="form_input mb-4"
+            type="text"
+            placeholder="#Tag"
             required
+            className="form_input"
           />
-
-          <div className="flex-end mx-3 mb-5 gap-4">
-            <Link href="/" className="text-gray-500 text-sm">
-              Cancel
-            </Link>
-
-            <button
-              type="submit"
-              disabled={submitting}
-              className="px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white"
-            >
-              {submitting ? `${type}...` : type}
-            </button>
-          </div>
         </label>
+
+        <div className="flex-end mx-3 mb-5 gap-4">
+          <Link href="/" className="text-gray-500 text-sm">
+            Cancel
+          </Link>
+
+          <button
+            type="submit"
+            disabled={submitting}
+            className="px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white"
+          >
+            {submitting ? `${type}ing...` : type}
+          </button>
+        </div>
       </form>
     </section>
   );
