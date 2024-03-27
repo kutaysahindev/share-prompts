@@ -1,20 +1,20 @@
-# Next.js 14 AI Prompt Sharing Application
+# Promptopia - AI Prompt Sharing Application
 
-A minimalistic Figma clone to demonstrate real-world features such as live collaboration with cursor chat, comments, reactions, and drawing designs (shapes, image upload) on the canvas using fabric.js.
+This project utilizes Next.js, MongoDB, NextAuth, and TailwindCSS to create a modern web platform where users can discover, create, and share AI prompts, featuring a sleek glassmorphism design, user profiles, prompt management, tag-based search, Google authentication, and full responsiveness.
 
 <p align="center">
-  <img src="https://github.com/kutaysahindev/figma-clone/assets/79334889/0d80264a-72d3-4844-9a48-859f226812bb" alt="Screenshot">
+  <img alt="image" src="https://github.com/kutaysahindev/share-prompts/assets/79334889/d5a4cba6-50fe-41e9-91a3-13fd6316fc93">
 </p>
 
 ## Live Demo
 
-Check out the live demo [here](https://figma-clone-bay.vercel.app/).
+Check out the live demo [here](https://share-prompts-nu-liard.vercel.app/).
 
 ## Tech Stack
 
-- Next.js
-- Javascript
+- Next.js 14
 - MongoDB
+- Javascript
 - TailwindCSS
 - NextAuth
 
@@ -37,8 +37,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone
-cd
+git clone https://github.com/kutaysahindev/share-prompts.git
+cd share-prompts
 ```
 
 **Installation**
@@ -62,7 +62,7 @@ GOOGLE_CLIENT_SECRET=
 MONGODB_URI=
 ```
 
-Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on these corresponding websites from [Google Cloud Console](https://console.cloud.google.com/welcome?rapt=AEjHL4MBaLLneW6OfAHf_zgms1eWZFw1wdy0_KIC4uh1nEqh2m4ojOvrXNlzJ4h7CZTkpiWgcsoHbUvS-FMdCP7WIkaVlPAeU7cnVR6Y0wJHeLMOtU6KAzA&project=promptopia-385410), [Cryptpool](https://www.cryptool.org/en/cto/openssl) (for random Auth Secret), and [MongoDB](https://www.mongodb.com/).
+Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on these corresponding websites from [Google Cloud Console](https://console.cloud.google.com/), [Cryptpool](https://www.cryptool.org/en/cto/openssl) (for random Auth Secret), and [MongoDB](https://www.mongodb.com/).
 
 **Running the Project**
 
