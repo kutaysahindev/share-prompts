@@ -12,7 +12,7 @@ Check out the live demo [here](https://share-prompts-nu-liard.vercel.app/).
 
 ## Tech Stack
 
-- Next.js 14
+- Next.js
 - MongoDB
 - Javascript
 - TailwindCSS
